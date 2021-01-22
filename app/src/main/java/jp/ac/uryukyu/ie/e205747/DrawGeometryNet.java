@@ -3,19 +3,10 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.*;
 import java.awt.Graphics;
-//ウィンドウクラス
-class OrigamiWindow extends JFrame{
-    public OrigamiWindow(String title, int width, int height){
-        super(title);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setSize(width,height);
-		setLocationRelativeTo(null);
-		setResizable(false);
-    }
-}
+
 /*線を描写するクラス
 外枠は黒線、山折りは赤線、谷折りは青線で描写する。*/
-class DrawGeomrtryNet extends JPanel{
+public class DrawGeometryNet extends JPanel{
 	public void paintComponent(Graphics g) {
         int[] xy = (new UserInput()).userInput();
         int x = xy[0];

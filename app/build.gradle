@@ -41,6 +41,8 @@ tasks.named('test') {
 
 jar {
     manifest {
-        attributes "Main-Class": "Main"
+        attributes  "Main-Class": "Main"
     }
 }
+
+run{ standardInput = System.in }
